@@ -1,6 +1,6 @@
-body {
-  margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
-}
+/* body {
+  margin-top: 40px; This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles.
+} */
 
 body::before {
   content: "XS";
@@ -27,4 +27,11 @@ body::before {
 .card{
   max-width: 300px;
   max-height: 500px;
+}
+
+.row{
+  padding-top: 50px;
+}
+.col-md-3{
+  padding: 20px;
 }
