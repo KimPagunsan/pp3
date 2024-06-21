@@ -7,40 +7,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-Q16L2q+Ve0zYhc6+xUn3gOUuS3+I3Ukvf0BkOFy4+BpKxm6KihJy4uVS3o3GYoZ7" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <script src="app.js"></script>
+    <style>
+        .nav-item.username {
+        display: none;
+       }
+        .nav-item.logout {
+        display: none;
+       }
+    </style>    
   </head>
   <body>
     <nav class="navbar navbar-expand-md" style="background-color: rgb(203, 203, 236);"> 
-     <div class="container">
-        <a href="index.html" class="navbar-brand"><img src="p/logo.png" alt="logo"></a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation"><span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav" style="color: bisque;">
-                <li class="nav-item">
-                    <a href="new.html" class="nav-link active" aria-current="page">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="products.html" class="nav-link">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about" class="nav-link">About</a>
-                </li>
-            </ul>
+        <div class="container">
+           <a href="index.html" class="navbar-brand"><img src="p/logo.png" alt="logo"></a>
+           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation"><span class="navbar-toggler-icon"></span>
+           </button>
         </div>
-     </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="nav">
+           <ul class="navbar-nav" style="color: bisque;">
+               <li class="nav-item">
+                   <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+               </li>
+               <li class="nav-item">
+                   <a href="products.html" class="nav-link">Products</a>
+               </li>
+               <li class="nav-item">
+                   <a href="about.html" class="nav-link">About</a>
+               </li>
+               <li class="nav-item">
+                   <a href="signin.html" class="nav-link"> Login</a>
+               </li>
+               <li class="nav-item">
+                
+                   <a href="signup.html" class="nav-link">Register</a>
+               </li>
+               
+           </ul>
+       </div>
+      </nav>    
     
-    <div id="slides" class="carousel slide mb-6" data-ride="carousel">
+    <div id="slides" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./p/Carosel 1.jpg" class="d-block w-100" alt="jpg_file" width="80%" height="100%">
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <h1>High Performance </h1>
+                        <h1>High Performance</h1>
                         <p class="opacity-75">We'll make sure you will get the best PC at an Affordable Price!</p>
-                        <button type="button" class="btn btn-primary btn-lg">SIGN UP</button>
+                        <button type="button" class="btn btn-primary btn-lg">
+                            <a href="register.html" style="color: white; text-decoration: none;">SIGN UP</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -53,13 +71,13 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#slides" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#slides" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Next</span>
         </a>
     </div>
 
@@ -68,10 +86,10 @@
         <div class="row featurette">
             <div class="col-md-7 col-lg-6">
                 <h2 class="featurette-heading fw-normal lh-1">Intel Inside, Gaming Unleashed! <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-                <p class="lead lead-centered" >Elevate your gaming experience to new heights with Intel Inside. When you choose a gaming device powered by Intel processors, you're not just playing games; you're unleashing the full potential of your gaming world. Intel's cutting-edge technology provides the horsepower and performance that gamers crave, ensuring that every moment of your gaming adventure is seamless and exhilarating. Get ready to dominate the virtual battlefield and explore vast gaming realms like never before, all thanks to Intel's gaming prowess.</p>
+                <p class="lead lead-centered">Elevate your gaming experience to new heights with Intel Inside. When you choose a gaming device powered by Intel processors, you're not just playing games; you're unleashing the full potential of your gaming world. Intel's cutting-edge technology provides the horsepower and performance that gamers crave, ensuring that every moment of your gaming adventure is seamless and exhilarating. Get ready to dominate the virtual battlefield and explore vast gaming realms like never before, all thanks to Intel's gaming prowess.</p>
             </div>
             <div class="col-md-5">
-                <img src="https://www.syntech.co.za/wp-content/uploads/2023/02/BX8071513900_wr_02a.jpg" class="img-fluid" alt="#" >
+                <img src="https://www.syntech.co.za/wp-content/uploads/2023/02/BX8071513900_wr_02a.jpg" class="img-fluid" alt="#">
             </div>
         </div>
         <hr class="featurette-divider">
@@ -102,10 +120,60 @@
               <li class="nav-item">
                 <a href="about.html" class="nav-link">About</a>
               </li>
+              <li class="nav-item">
+                <a href="signin.html" class="nav-link"> Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="signup.html" class="nav-link">Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="logout.html" class="nav-link">Logout</a>
+              </li>
             </ul>
           </div>
         </div>
       </footer>
+      <script>
+        "use strict";
+
+        // Login Form
+        const loginForm = document.querySelector("#loginForm");
+
+        function loginUser(event) {
+            event.preventDefault(); // Prevent form submission
+            const email = document.querySelector("#email").value.trim();
+            const password = document.querySelector("#password").value;
   
-  </body>
-</html>
+            // Perform login validation (you can implement actual login logic here)
+            if (!validateEmail(email)) {
+                showMessage("Please enter a valid email address.");
+            } else if (password.length < 8) {
+                showMessage("Please enter a valid password.");
+            } else {
+                // Login successful, redirect to homepage
+                showMessage("Login successful!");
+                setTimeout(() => {
+                    location.href = "index.html"; // Redirect to homepage
+                }, 1500);
+            }
+        }
+        loginForm.addEventListener("submit", loginUser);
+  
+        // Utility function to show messages
+        function showMessage(message) {
+            const messageDiv = document.querySelector("#message");
+            messageDiv.textContent = message;
+        }
+  
+        // Function to validate email (you can replace this with your own validation logic)
+        function validateEmail(email) {
+            // Example validation - check if email contains '@'
+            return email.includes('@');
+        }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+  </html>

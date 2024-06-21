@@ -1,0 +1,90 @@
+/* body {
+  margin-top: 40px; This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles.
+} */
+
+/* body::before {
+  content: "XS";
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+} */
+
+/* This box class is purely used for explaining how the bootstrap grid system works. */
+.box {
+  background-color: lightblue;
+  border: 1px solid blue;
+  min-height: 50px;
+  font-size: 2rem;
+}
+
+/* .navbar-brand img{
+  size: 200px;
+} */
+
+.card{
+  max-width: 300px;
+  max-height: 500px;
+}
+
+.row{
+  padding-top: 50px;
+}
+.col-md-3{
+  padding: 20px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-flex {
+  flex: 1;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 60px;
+  z-index: 100;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .nav-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem;
+  align-items: center;
+
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+}
+
